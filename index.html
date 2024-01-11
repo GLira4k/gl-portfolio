@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/2cd63c9772.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-gray-800 shadow-md">
+        <div class="max-w-7xl px-4 sm:px-6 lg:px-8 ">
+            <div class="flex items-center h-16">
+                <div class="flex items-center justify-between w-full">
+                    <a href="" class="flex-shrink-0">
+                        <img src="assets/imgs/gl-icon2.png" alt="logo" class=" h-12 w-12">
+                    </a>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4 text-white">
+                            <a href="#aboutme" class="hover:bg-gray-700 transition duration-150 ease-in-out text-white px-3 py-2 rounded-md text-sm font-medium">Sobre mim</a>
+                            <a href="#projects" class="hover:bg-gray-700 transition duration-150 ease-in-out text-white px-3 py-2 rounded-md text-sm font-medium">Projetos</a>
+                            <a href="#services" class="hover:bg-gray-700 transition duration-150 ease-in-out text-white px-3 py-2 rounded-md text-sm font-medium">Serviços</a>
+                            <a href="#my-skills" class="hover:bg-gray-700 transition duration-150 ease-in-out text-white px-3 py-2 rounded-md text-sm font-medium">Minhas Skills</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mr-2 flex md:hidden">
+                    <button id="menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-50 hover:bg-gray-700 focus:bg-gray-700 focus:text-gray-50 transition duration-150 ease-in-out" aria-label="Menu" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="menu" class=" hidden md:hidden">
+            <div class="px-2 pt-2 pd-3 sm:px-3 flex flex-col items-center devide-y devide-solid divide-gray-50">
+                <a href="#aboutme" class="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Sobre mim</a>
+                <a href="#projects" class="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Projetos</a>
+                <a href="#services" class="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Serviços</a>
+                <a href="#my-skills" class="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Minhas Skills</a>
+            </div>
+        </div>
+    </nav>
+
+</body>
+</html>
