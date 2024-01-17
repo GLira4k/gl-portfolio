@@ -5,5 +5,10 @@ btn.addEventListener("click", () => {
     menu.classList.toggle("hidden")
 });
 
-
-
+document.addEventListener('DOMContentLoaded', function () {
+    AOS.init({
+        duration: 800, // Duração da animação em milissegundos
+        easing: 'ease-in-out', // Tipo de animação
+        once: false, // A animação ocorrerá apenas uma vez
+    });
+});

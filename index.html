@@ -10,13 +10,15 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="assets/imgs/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/js/index.js" defer></script>
     <script src="https://kit.fontawesome.com/2cd63c9772.js" crossorigin="anonymous"></script>
     <title>Portfólio - Gabriel Lira</title>
 </head>
 
-<body class="bg-gray-800">
+<body class="bg-gray-800 aos-init">
     <!--Header, Navegação-->
     <nav id="navigation" class="bg-gray-800 fixed w-full px-4 sm:px-6 lg:px-8">
         <div class="w-full px-4 sm:px-6 lg:px-8">
@@ -89,10 +91,10 @@
             </div>
         </section>
         <!--Sobre mim-->
-        <section>
+        <section id="aboutme aos" data-aos="fade-right">
             <div class="w-full px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
                 <div>
-                    <div id="aboutme" class="flex flex-col items-center justify-center gap-20">
+                    <div class="flex flex-col items-center justify-center gap-20">
                         <h1 class="text-white font-sans font-bold sm:text-2xl md:text-2xl lg:text-3xl">Sobre mim</h1>
                         <div
                             class="w-full flex flex-col gap-1 items-center justify-center text-justify lg:flex-row lg:justify-around">
@@ -109,7 +111,7 @@
             </div>
         </section>
         <!--Meus projetos-->
-        <section id="projects" class="flex flex-col items-center justify-center my-40">
+        <section id="projects" class="flex flex-col items-center justify-center my-40 aos" data-aos="fade-right">
             <h1 class="text-white font-sans font-bold sm:text-2xl md:text-2xl lg:text-3xl my-16">Meus Projetos</h1>
             <div class="w-full px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -159,7 +161,7 @@
             </div>
         </section>
         <!--Minhas Skills-->
-        <section id="my-skills" class="flex flex-col items-center justify-center my-40">
+        <section id="my-skills" class="flex flex-col items-center justify-center my-40 aos" data-aos="fade-right">
             <div class="w-full px-4 sm:px-7 lg:px-8 flex flex-col items-center justify-center">
                 <h1 class="text-white font-sans font-bold sm:text-2xl md:text-2xl lg:text-3xl my-16">Minhas Skills</h1>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -196,7 +198,7 @@
             </div>
         </section>
         <!--Contatos-->
-        <section id="contacts" class="my-10">
+        <section id="contacts" class="my-10 aos" data-aos="fade-right">
             <div class="w-full px-4 sm:px-7 lg:px-8 flex flex-col items-center justify-center">
                 <h1 class="text-white font-sans font-bold sm:text-2xl md:text-2xl lg:text-3xl my-24">Contatos</h1>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
