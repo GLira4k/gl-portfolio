@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="assets/imgs/favicon-32x32.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/js/index.js" defer></script>
     <script src="https://kit.fontawesome.com/2cd63c9772.js" crossorigin="anonymous"></script>
     <title>Portfólio - Gabriel Lira</title>
 </head>
+
 <body class="bg-gray-800">
     <!--Header, Navegação-->
-    <nav class="bg-gray-800">
+    <nav id="navigation" class="bg-gray-800 fixed w-full px-4 sm:px-6 lg:px-8">
         <div class="w-full px-4 sm:px-6 lg:px-8">
             <div class="flex items-center h-16">
                 <div class="flex items-center justify-between w-full">
@@ -23,15 +27,23 @@
                     </a>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4 text-white">
-                            <a href="#aboutme" class="hover:bg-gray-700 transition duration-150 ease-in-out text-white px-3 py-2 rounded-md text-sm font-medium">Sobre mim</a>
-                            <a href="#projects" class="hover:bg-gray-700 transition duration-150 ease-in-out text-white px-3 py-2 rounded-md text-sm font-medium">Projetos</a>
-                            <a href="#my-skills" class="hover:bg-gray-700 transition duration-150 ease-in-out text-white px-3 py-2 rounded-md text-sm font-medium">Minhas Skills</a>
-                            <a href="#contacts" class="hover:bg-gray-700 transition duration-150 ease-in-out text-white px-3 py-2 rounded-md text-sm font-medium">Contatos</a>
+                            <a href="#aboutme"
+                                class="hover:bg-gray-700 transition duration-150 ease-in-out text-white px-3 py-2 rounded-md text-sm font-medium">Sobre
+                                mim</a>
+                            <a href="#projects"
+                                class="hover:bg-gray-700 transition duration-150 ease-in-out text-white px-3 py-2 rounded-md text-sm font-medium">Projetos</a>
+                            <a href="#my-skills"
+                                class="hover:bg-gray-700 transition duration-150 ease-in-out text-white px-3 py-2 rounded-md text-sm font-medium">Minhas
+                                Skills</a>
+                            <a href="#contacts"
+                                class="hover:bg-gray-700 transition duration-150 ease-in-out text-white px-3 py-2 rounded-md text-sm font-medium">Contatos</a>
                         </div>
                     </div>
                 </div>
                 <div class="mr-2 flex md:hidden">
-                    <button id="menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-50 hover:bg-gray-700 focus:bg-gray-700 focus:text-gray-50 transition duration-150 ease-in-out" aria-label="Menu" aria-expanded="false">
+                    <button id="menu-button" type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-50 hover:bg-gray-700 focus:bg-gray-700 focus:text-gray-50 transition duration-150 ease-in-out"
+                        aria-label="Menu" aria-expanded="false">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
@@ -40,11 +52,17 @@
 
         <div id="menu" class=" hidden md:hidden bg-cover">
             <div class="px-2 pt-2 pd-3 sm:px-3 flex flex-col items-center devide-y devide-solid divide-gray-50">
-                <a href="#aboutme" class="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Sobre mim</a>
-                <a href="#projects" class="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Projetos</a>
-                <a href="#my-skills" class="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Minhas Skills</a>
-                <a href="#contacts" class="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Contatos</a>
-                
+                <a href="#aboutme"
+                    class="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Sobre
+                    mim</a>
+                <a href="#projects"
+                    class="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Projetos</a>
+                <a href="#my-skills"
+                    class="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Minhas
+                    Skills</a>
+                <a href="#contacts"
+                    class="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-base font-medium transition duration-150 ease-in-out">Contatos</a>
+
             </div>
         </div>
     </nav>
@@ -54,13 +72,19 @@
             <div class="w-full px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center gap-4">
                 <div class="animation-pulse">
                     <p class="text-white font-mono sm:text-2xl md:text-2xl lg:text-3xl">Olá, meu nome é </p>
-                    <h1 class="text-gray-300 font-bold font-sans text-3xl sm:text-5xl md:text-6xl lg:text-7xl">Gabriel Lira.</h1>
-                    <h1 class="text-gray-400 font-bold font-sans text-3xl sm:text-5xl md:text-6xl lg:text-7xl">Desenvolvedor Front-End.</h1>
+                    <h1 class="text-gray-300 font-bold font-sans text-3xl sm:text-5xl md:text-6xl lg:text-7xl">Gabriel
+                        Lira.</h1>
+                    <h1 class="text-gray-400 font-bold font-sans text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
+                        Desenvolvedor Front-End.</h1>
                 </div>
                 <div class="mt-4 flex items-center gap-10
                  justify-center">
-                    <a href="assets/pdfs/cv-gabriel-lira.pdf" target="_blank"><button class="transition ease-in-out duration-150 hover:bg-gray-700 mt-20 p-2 text-gray-50 rounded-md border drop-shadow-xl ">Baixar CV</button></a>
-                    <a href="mailto:gxavierlira@gmail.com" target="_blank"><button class="transition ease-in-out duration-150 hover:bg-gray-700 mt-20 p-2 text-gray-50 rounded-md border drop-shadow-xl animate-pulse">Entrar em contato</button></a>
+                    <a href="assets/pdfs/cv-gabriel-lira.pdf" target="_blank"><button
+                            class="transition ease-in-out duration-150 hover:bg-gray-700 mt-20 p-2 text-gray-50 rounded-md border drop-shadow-xl ">Baixar
+                            CV</button></a>
+                    <a href="mailto:gxavierlira@gmail.com" target="_blank"><button
+                            class="transition ease-in-out duration-150 hover:bg-gray-700 mt-20 p-2 text-gray-50 rounded-md border drop-shadow-xl animate-pulse">Entrar
+                            em contato</button></a>
                 </div>
             </div>
         </section>
@@ -70,10 +94,16 @@
                 <div>
                     <div id="aboutme" class="flex flex-col items-center justify-center gap-20">
                         <h1 class="text-white font-sans font-bold sm:text-2xl md:text-2xl lg:text-3xl">Sobre mim</h1>
-                        <div class="w-full flex flex-col gap-1 items-center justify-center text-justify lg:flex-row lg:justify-around">
-                        <a href="https://github.com/GLira4k" target="_blank"><img src="assets/imgs/user-photo.jpg" alt="user-photo" class="rounded-full w-48 md:w-60 lg:w-80 shadow-lg cursor-pointer hover:-translate-y-2 hover:shadow-2xl hover:shadow-gray-900 transition duration-150 ease-in-out"></a>
-                        <p class="text-gray-400 font-mono text-1xl lg:w-3/5 m-5">Desenvolvedor Front-end com experiência em HTML, CSS, Tailwind, Javascript e React. Apaixonado pelo desenvolvimento de componentes reutilizáveis. Também possui experiência em projetos gerenciados por Metodologias Ágeis. Cursando ciêcia da computação pela Faculdade Única.</p>
-                    </div>
+                        <div
+                            class="w-full flex flex-col gap-1 items-center justify-center text-justify lg:flex-row lg:justify-around">
+                            <a href="https://github.com/GLira4k" target="_blank"><img src="assets/imgs/user-photo.jpg"
+                                    alt="user-photo"
+                                    class="rounded-full w-48 md:w-60 lg:w-80 shadow-lg cursor-pointer hover:-translate-y-2 hover:shadow-2xl hover:shadow-gray-900 transition duration-150 ease-in-out"></a>
+                            <p class="text-gray-400 font-mono text-1xl lg:w-3/5 m-5">Desenvolvedor Front-end com
+                                experiência em HTML, CSS, Tailwind, Javascript e React. Apaixonado pelo desenvolvimento
+                                de componentes reutilizáveis. Também possui experiência em projetos gerenciados por
+                                Metodologias Ágeis. Cursando ciêcia da computação pela Faculdade Única.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,36 +114,45 @@
             <div class="w-full px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <!--Card 1-->
-                    <div class="rounded-2xl shadow-lg bg-gray-100 m-10 md:w-72 lg:w-80 hover:-translate-y-1 hover:shadow-2xl hover:shadow-gray-900 transition duration-150 ease-in-out">
+                    <div
+                        class="rounded-2xl shadow-lg bg-gray-100 m-10 md:w-72 lg:w-80 hover:-translate-y-1 hover:shadow-2xl hover:shadow-gray-900 transition duration-150 ease-in-out">
                         <div class="p-4 flex flex-col items-center">
                             <div class="rounded-2xl overflow-hidden">
                                 <img src="assets/imgs/user-photo.jpg" alt="">
                             </div>
                             <h5 class="text-2xl md:text-3xl font-medium mt-3">QR Generator</h5>
                             <p class="text-slate-500 text-lg mt-3">Gerador de QR Code feito com React.</p>
-                            <a href="https://qrcode-generator-glira4k.vercel.app/" target="_blank"><button class="bg-gray-300 m-3 p-3 rounded-xl font-semibold hover:bg-gray-400 hover:shadow-md transition duration-150 ">Saiba Mais</button></a>
+                            <a href="https://qrcode-generator-glira4k.vercel.app/" target="_blank"><button
+                                    class="bg-gray-300 m-3 p-3 rounded-xl font-semibold hover:bg-gray-400 hover:shadow-md transition duration-150 ">Saiba
+                                    Mais</button></a>
                         </div>
                     </div>
                     <!--Card 2-->
-                    <div class="rounded-2xl shadow-lg bg-gray-100 m-10 md:w-72 lg:w-80 hover:-translate-y-1 hover:shadow-2xl hover:shadow-gray-900 transition duration-150 ease-in-out">
+                    <div
+                        class="rounded-2xl shadow-lg bg-gray-100 m-10 md:w-72 lg:w-80 hover:-translate-y-1 hover:shadow-2xl hover:shadow-gray-900 transition duration-150 ease-in-out">
                         <div class="p-4 flex flex-col items-center">
                             <div class="rounded-2xl overflow-hidden">
                                 <img src="assets/imgs/user-photo.jpg" alt="">
                             </div>
                             <h5 class="text-2xl md:text-3xl font-medium mt-3">QR Generator</h5>
                             <p class="text-slate-500 text-lg mt-3">Gerador de QR Code feito com React.</p>
-                            <a href="https://qrcode-generator-glira4k.vercel.app/" target="_blank"><button class="bg-gray-300 m-3 p-3 rounded-xl font-semibold hover:bg-gray-400 hover:shadow-md transition duration-150 ">Saiba Mais</button></a>
+                            <a href="https://qrcode-generator-glira4k.vercel.app/" target="_blank"><button
+                                    class="bg-gray-300 m-3 p-3 rounded-xl font-semibold hover:bg-gray-400 hover:shadow-md transition duration-150 ">Saiba
+                                    Mais</button></a>
                         </div>
                     </div>
                     <!--Card 3-->
-                    <div class="rounded-2xl shadow-lg bg-gray-100 m-10 md:w-72 lg:w-80 hover:-translate-y-1 hover:shadow-2xl hover:shadow-gray-900 transition duration-150 ease-in-out">
+                    <div
+                        class="rounded-2xl shadow-lg bg-gray-100 m-10 md:w-72 lg:w-80 hover:-translate-y-1 hover:shadow-2xl hover:shadow-gray-900 transition duration-150 ease-in-out">
                         <div class="p-4 flex flex-col items-center">
                             <div class="rounded-2xl overflow-hidden">
                                 <img src="assets/imgs/user-photo.jpg" alt="">
                             </div>
                             <h5 class="text-2xl md:text-3xl font-medium mt-3">QR Generator</h5>
                             <p class="text-slate-500 text-lg mt-3">Gerador de QR Code feito com React.</p>
-                            <a href="https://qrcode-generator-glira4k.vercel.app/" target="_blank"><button class="bg-gray-300 m-3 p-3 rounded-xl font-semibold hover:bg-gray-400 hover:shadow-md transition duration-150 ">Saiba Mais</button></a>
+                            <a href="https://qrcode-generator-glira4k.vercel.app/" target="_blank"><button
+                                    class="bg-gray-300 m-3 p-3 rounded-xl font-semibold hover:bg-gray-400 hover:shadow-md transition duration-150 ">Saiba
+                                    Mais</button></a>
                         </div>
                     </div>
                 </div>
@@ -124,63 +163,86 @@
             <div class="w-full px-4 sm:px-7 lg:px-8 flex flex-col items-center justify-center">
                 <h1 class="text-white font-sans font-bold sm:text-2xl md:text-2xl lg:text-3xl my-16">Minhas Skills</h1>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    <div class="bg-gray-200 w-32 h-32 flex items-center justify-center rounded-xl shadow-md hover:-translate-y-1 hover:shadow-2xl transition duration-150 ease-in-out m-5">
+                    <div
+                        class="bg-gray-200 w-32 h-32 flex items-center justify-center rounded-xl shadow-md hover:-translate-y-1 hover:shadow-2xl transition duration-150 ease-in-out m-5">
                         <abbr title="HTML5"><i class="fa-brands fa-html5 text-8xl"></i></abbr>
                     </div>
-                    <div class="bg-gray-200 w-32 h-32 flex items-center justify-center rounded-xl shadow-md hover:-translate-y-1 hover:shadow-2xl transition duration-150 ease-in-out m-5">
+                    <div
+                        class="bg-gray-200 w-32 h-32 flex items-center justify-center rounded-xl shadow-md hover:-translate-y-1 hover:shadow-2xl transition duration-150 ease-in-out m-5">
                         <abbr title="CSS3"><i class="fa-brands fa-css3-alt text-8xl"></i></abbr>
                     </div>
-                    <div class="bg-gray-200 w-32 h-32 flex items-center justify-center rounded-xl shadow-md hover:-translate-y-1 hover:shadow-2xl transition duration-150 ease-in-out m-5">
-                        <abbr title="Tailwind CSS"><i><img src="assets/imgs/tailwind-css.svg" alt="tailwind-logo" class="text-black"></i></abbr>
+                    <div
+                        class="bg-gray-200 w-32 h-32 flex items-center justify-center rounded-xl shadow-md hover:-translate-y-1 hover:shadow-2xl transition duration-150 ease-in-out m-5">
+                        <abbr title="Tailwind CSS"><i><img src="assets/imgs/tailwind-css.svg" alt="tailwind-logo"
+                                    class="text-black"></i></abbr>
                     </div>
-                    <div class="bg-gray-200 w-32 h-32 flex items-center justify-center rounded-xl shadow-md hover:-translate-y-1 hover:shadow-2xl transition duration-150 ease-in-out m-5">
+                    <div
+                        class="bg-gray-200 w-32 h-32 flex items-center justify-center rounded-xl shadow-md hover:-translate-y-1 hover:shadow-2xl transition duration-150 ease-in-out m-5">
                         <abbr title="Javascript"><i class="fa-brands fa-js text-8xl"></i></abbr>
                     </div>
-                    <div class="bg-gray-200 w-32 h-32 flex items-center justify-center rounded-xl shadow-md hover:-translate-y-1 hover:shadow-2xl transition duration-150 ease-in-out m-5">
+                    <div
+                        class="bg-gray-200 w-32 h-32 flex items-center justify-center rounded-xl shadow-md hover:-translate-y-1 hover:shadow-2xl transition duration-150 ease-in-out m-5">
                         <abbr title="ReactJS"><i class="fa-brands fa-react text-8xl"></i></abbr>
                     </div>
-                    <div class="bg-gray-200 w-32 h-32 flex items-center justify-center rounded-xl shadow-md hover:-translate-y-1 hover:shadow-2xl transition duration-150 ease-in-out m-5">
+                    <div
+                        class="bg-gray-200 w-32 h-32 flex items-center justify-center rounded-xl shadow-md hover:-translate-y-1 hover:shadow-2xl transition duration-150 ease-in-out m-5">
                         <abbr title="Git"><i class="fa-brands fa-git-alt text-8xl"></i></abbr>
                     </div>
-                    <div class="bg-gray-200 w-32 h-32 flex items-center justify-center rounded-xl shadow-md hover:-translate-y-1 hover:shadow-2xl transition duration-150 ease-in-out m-5">
+                    <div
+                        class="bg-gray-200 w-32 h-32 flex items-center justify-center rounded-xl shadow-md hover:-translate-y-1 hover:shadow-2xl transition duration-150 ease-in-out m-5">
                         <abbr title="Github"><i class="fa-brands fa-github text-8xl"></i></abbr>
                     </div>
                 </div>
             </div>
         </section>
         <!--Contatos-->
-        <section>
-            <div class="w-full px-4 sm:px-7 lg:px-8 flex items-center justify-center">
+        <section id="contacts" class="my-10">
+            <div class="w-full px-4 sm:px-7 lg:px-8 flex flex-col items-center justify-center">
+                <h1 class="text-white font-sans font-bold sm:text-2xl md:text-2xl lg:text-3xl my-24">Contatos</h1>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    <div class="flex flex-col items-center justify-center m-3">
-                        <div class="flex items-center justify-center bg-gray-200 w-14 h-14 rounded-full">
-                            <i class="fa-regular fa-envelope text-3xl"></i>
+                    <a href="mailto:gxavierlira@gmail.com" target="_blank">
+                        <div class="flex flex-col items-center justify-center m-3">
+                            <div
+                                class="flex items-center justify-center bg-gray-200 hover:bg-gray-300 trasition duration-150 w-14 h-14 rounded-full">
+                                <i class="fa-regular fa-envelope text-3xl"></i>
+                            </div>
+                            <div class="flex flex-col items-center justify-center">
+                                <h5 class="text-gray-300 font-bold m-2">E-mail</h5>
+                                <p class="text-gray-400 font-mono text-1xl lg:w-3/5 m-2">gxavierlira@gmail.com</p>
+                            </div>
                         </div>
-                        <p class="text-gray-400 font-mono text-1xl lg:w-3/5 m-2">gxavierlira@gmail.com</p>
-                    </div>
-                    <div class="flex flex-col items-center justify-center m-3">
-                        <div class="flex items-center justify-center bg-gray-200 w-14 h-14 rounded-full">
-                            <i class="fa-brands fa-linkedin-in text-3xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gabriel-lira-02823a238/" target="_blank">
+                        <div class="flex flex-col items-center justify-center m-3">
+                            <div
+                                class="flex items-center justify-center bg-gray-200 hover:bg-gray-300 trasition duration-150 w-14 h-14 rounded-full">
+                                <i class="fa-brands fa-linkedin-in text-3xl"></i>
+                            </div>
+                            <h5 class="text-gray-300 font-bold m-2">Linkedin</h5>
+                            <p class="text-gray-400 font-mono text-1xl lg:w-3/5 m-2">@gabriel-lira</p>
                         </div>
-                        <p class="text-gray-400 font-mono text-1xl lg:w-3/5 m-2">@gabriel-lira</p>
-                    </div>
+                    </a>
                     <div class="flex flex-col items-center justify-center m-3">
-                        <div class="flex items-center justify-center bg-gray-200 w-14 h-14 rounded-full">
+                        <div
+                            class="flex items-center justify-center bg-gray-200 hover:bg-gray-300 trasition duration-150 w-14 h-14 rounded-full">
                             <i class="fa-solid fa-phone text-3xl"></i>
                         </div>
-                        <p class="text-gray-400 font-mono text-1xl lg:w-3/5 m-2">(31) 9 8853-6798</p>
+                        <h5 class="text-gray-300 font-bold m-2">Telefone</h5>
+                        <p class="text-gray-400 font-mono text-1xl lg:w-3/5 m-2">(31) 98853-6798</p>
                     </div>
-
-                    <div class="flex flex-col items-center justify-center m-3">
-                        <div class="flex items-center justify-center bg-gray-200 w-14 h-14 rounded-full">
-                            <i class="fa-brands fa-github text-3xl"></i>
+                    <a href="https://github.com/GLira4k" target="_blank">
+                        <div class="flex flex-col items-center justify-center m-3">
+                            <div
+                                class="flex items-center justify-center bg-gray-200 hover:bg-gray-300 trasition duration-150 w-14 h-14 rounded-full">
+                                <i class="fa-brands fa-github text-3xl"></i>
+                            </div>
+                            <h5 class="text-gray-300 font-bold m-2">Github</h5>
+                            <p class="text-gray-400 font-mono text-1xl lg:w-3/5 m-2">@GLira4k</p>
                         </div>
-                        <p class="text-gray-400 font-mono text-1xl lg:w-3/5 m-2">@GLira4k</p>                    
+                    </a>
                 </div>
-            </div>
         </section>
-        
     </main>
-
 </body>
+
 </html>
