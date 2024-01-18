@@ -1,7 +1,11 @@
 module.exports = {
     content: ["./**/*/{html,js]"],
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage:{
+                "particles-pattern": ".particles-js-canvas-el"
+            }
+        },
     },
     plugins:[],
 };
