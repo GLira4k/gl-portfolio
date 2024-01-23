@@ -9,9 +9,9 @@ btn.addEventListener("click", () => {
 
 document.addEventListener('DOMContentLoaded', function () {
     AOS.init({
-        duration: 800, // Duração da animação em milissegundos
-        easing: 'ease-in-out', // Tipo de animação
-        once: false, // A animação ocorrerá apenas uma vez
+        duration: 800,
+        easing: 'ease-in-out', 
+        once: false, 
     });
 });
 
